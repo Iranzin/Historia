@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes animBody {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+}
+
+@keyframes animImg {
+    0% {
+        background-position-x: 0%;
+    }
+    50% {
+        background-position-x: 100%;
+    }
+}
+@keyframes popUp {
+    0% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.8);
+    }
+}
+
+body {
+    background-image: radial-gradient(#0c3674, #135844);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    background-size: 300% 300%;
+    background-position: 0 0;
+    animation: animBody 20s infinite;
+}
+
+#indicador-de-som {
+    position: absolute;
+    bottom: 5vw;
+    right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: 10vw;
+    transition: .5s ease-in-out;
+    animation: popUp 2s ease-in-out infinite;
+}
+#indicador-de-som svg {
+    width: 30%;
+}
+
+button {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    letter-spacing: .1rem;
+    font-style: normal;
+    outline: none;
+    padding: 16px 24px;
+    cursor: pointer;
+    margin: 0;
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+    font-size: .8vw;
+    flex-grow: 1;
+    animation: animImg 4s 1s infinite;
+}
+.passo button:last-child {
+    background-image: linear-gradient(to right, #ff589b, #fc0e2d, #ff5a8f, #ff6387);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+button:hover {
+    box-shadow: 0 12px 45px 0 rgba(65, 132, 234, 0.75);
+}
+.passo button:last-child:hover {
+    box-shadow: 0 12px 45px 0 rgba(236, 116, 149, 0.75);
+}
+
+.img-cover {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    transition: 250ms ease-in-out;
+    margin: auto;
+    border-radius: 25px;
+    animation: animImg 6s infinite;
+}
+
+.passo {
+    display: none;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    margin: 32px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: .9vw;
+}
+
+.passo.ativo {
+    width: 50vw;
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+}

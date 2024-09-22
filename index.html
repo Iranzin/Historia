@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>O resgate a princesa perdida</title>
+</head>
+<body>
+    <main>
+        <button id="indicador-de-som" class="off">
+            <p>Ligue o som abaixo</p>
+            <svg class="desligado" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M301.1 34.8C312.6 40 320 51.4 320 64l0 384c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352 64 352c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l67.8 0L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM425 167l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z" fill="#fff"/></svg>
+        </button>
+        <div class="passo ativo" id="passo-0">
+            <div class="img-cover" style="background-image: url('./img/1.jpg');"></div>
+            <p>Você é um mago poderoso que recebeu uma missão crucial: resgatar uma moça aprisionada por um monstro em uma caverna misteriosa. Com seus poderes mágicos, você deve encontrar o caminho para a caverna e enfrentar os desafios que surgirem. Sua jornada começa agora!</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="1">Usar "Luz Mágica" para explorar a caverna</button>
+                <button class="btn-proximo" data-proximo="2">Avançar na escuridão, confiando em seus sentidos</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-1">
+            <div class="img-cover" style="background-image: url('./img/4.jpeg');"></div>
+            <p>Você usa "Luz Mágica" para iluminar o caminho e entra na caverna. Em um corredor estreito, você encontra duas opções: um caminho com sinais de armadilhas e outro que parece mais seguro.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="3">Usar "Escudo Arcano" para proteger-se e seguir pelo caminho com sinais de armadilhas</button>
+                <button class="btn-proximo" data-proximo="4">Seguir pelo caminho que parece mais seguro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-2">
+            <div class="img-cover" style="background-image: url('./img/2.jpg');"></div>
+            <p>Avançando na escuridão, você é emboscado por goblins. Seus sentidos são aguçados, mas você precisa decidir rapidamente.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="5">Usar "Chama Mística" para atacar os goblins</button>
+                <button class="btn-proximo" data-proximo="6">Utilizar "Teleportar" para escapar da emboscada</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-3">
+            <div class="img-cover" style="background-image: url('./img/5.jpeg');"></div>
+            <p>Com "Escudo Arcano" ativo, você enfrenta as armadilhas e encontra uma ramificação na caverna. À esquerda, há uma caverna misteriosa; à direita, um túnel que parece levar a uma área mais profunda.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="7">Entrar na caverna misteriosa</button>
+                <button class="btn-proximo" data-proximo="8">Seguir pelo túnel mais profundo</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-4">
+            <div class="img-cover" style="background-image: url('./img/6.jpeg');"></div>
+            <p>Você opta por seguir pelo caminho seguro e encontra uma área calma, mas logo percebe que não há sinais de que a moça esteja aqui.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="9">Voltar e tentar o outro caminho</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-5">
+            <div class="img-cover" style="background-image: url('./img/7.jpeg');"></div>
+            <p>Usando "Chama Mística", você derrota os goblins e encontra um mapa antigo escondido entre as pedras. O mapa mostra a localização de uma caverna profunda.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="10">Seguir para a caverna profunda indicada pelo mapa</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-6">
+            <div class="img-cover" style="background-image: url('./img/3.jpg');"></div>
+            <p>Teleportando-se, você chega a uma área elevada com uma visão clara da caverna abaixo. É possível ver duas entradas distintas.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="11">Descer e explorar a entrada à esquerda</button>
+                <button class="btn-proximo" data-proximo="12">Descer e explorar a entrada à direita</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-7">
+            <div class="img-cover" style="background-image: url('./img/8.jpeg');"></div>
+            <p>Na caverna misteriosa, você encontra inscrições antigas que revelam a localização da caverna do monstro que aprisiona a moça.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="13">Seguir para a caverna do monstro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-8">
+            <div class="img-cover" style="background-image: url('./img/9.jpeg');"></div>
+            <p>O túnel mais profundo leva você a uma sala com uma série de portas. Cada porta tem uma runa mágica diferente.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="14">Usar "Desvendar Runas" para escolher uma porta</button>
+                <button class="btn-proximo" data-proximo="15">Escolher uma porta ao acaso</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-9">
+            <div class="img-cover" style="background-image: url('./img/10.jpeg');"></div>
+            <p>Voltando ao caminho anterior, você encontra a caverna misteriosa e decide seguir para a caverna do monstro.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="13">Seguir para a caverna do monstro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-10">
+            <div class="img-cover" style="background-image: url('./img/11.jpeg');"></div>
+            <p>Seguindo o mapa, você encontra a caverna profunda, que leva a uma grande sala com o monstro e a moça aprisionada.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="16">Usar "Raios" para atacar o monstro</button>
+                <button class="btn-proximo" data-proximo="17">Tentar negociar com o monstro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-11">
+            <div class="img-cover" style="background-image: url('./img/12.jpeg');"></div>
+            <p>Explorando a entrada à esquerda, você se depara com o monstro e a moça aprisionada. Há uma maneira de atacá-lo ou usar uma estratégia mágica.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="18">Usar "Raios" para derrotar o monstro</button>
+                <button class="btn-proximo" data-proximo="19">Usar "Manto de Invisibilidade" para se aproximar e libertar a moça</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-12">
+            <div class="img-cover" style="background-image: url('./img/13.jpeg');"></div>
+            <p>Explorando a entrada à direita, você encontra uma área pantanosa. Apesar de bela, não há sinais da moça ou do monstro.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="20">Retornar e tentar a entrada à esquerda</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-13">
+            <div class="img-cover" style="background-image: url('./img/12.jpeg');"></div>
+            <p>Você chega à caverna do monstro. Com habilidades mágicas e astúcia, decide enfrentar a criatura.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="21">Usar "Raios" para derrotar o monstro</button>
+                <button class="btn-proximo" data-proximo="22">Tentar negociar com o monstro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-14">
+            <div class="img-cover" style="background-image: url('./img/14.jpeg');"></div>
+            <p>Você usa "Desvendar Runas" e encontra uma porta que leva diretamente à caverna do monstro.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="21">Enfrentar o monstro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-15">
+            <div class="img-cover" style="background-image: url('./img/15.jpeg');"></div>
+            <p>Escolhendo uma porta ao acaso, você encontra uma área cheia de armadilhas mágicas, tornando a jornada mais perigosa.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="23">Usar "Desvendar Runas" para evitar armadilhas e encontrar o monstro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-16">
+            <div class="img-cover" style="background-image: url('./img/16.jpg');"></div>
+            <p>Usando "Raios", você derrota o monstro e liberta a moça. Sua missão está cumprida!</p>
+        </div>
+        <div class="passo" id="passo-17">
+            <div class="img-cover" style="background-image: url('./img/17.jpeg');"></div>
+            <p>Negociando com o monstro, você consegue persuadi-lo a libertar a moça. Ambos escapam da caverna.</p>
+        </div>
+        <div class="passo" id="passo-18">
+            <div class="img-cover" style="background-image: url('./img/16.jpg');"></div>
+            <p>Com "Raios", você derrota o monstro e salva a moça. Juntos, vocês deixam a caverna.</p>
+        </div>
+        <div class="passo" id="passo-19">
+            <div class="img-cover" style="background-image: url('./img/19.jpeg');"></div>
+            <p>Usando "Manto de Invisibilidade", você se aproxima e liberta a moça sem alertar o monstro. Ambos escapam com sucesso.</p>
+        </div>
+        <div class="passo" id="passo-20">
+            <div class="img-cover" style="background-image: url('./img/12.jpeg');"></div>
+            <p>De volta à entrada à esquerda, você encontra o monstro e a moça aprisionada. Agora é a hora de agir.</p>
+            <div class="button-container">
+                <button class="btn-proximo" data-proximo="21">Usar "Raios" para derrotar o monstro</button>
+                <button class="btn-proximo" data-proximo="22">Tentar negociar com o monstro</button>
+            </div>
+        </div>
+        <div class="passo" id="passo-21">
+            <div class="img-cover" style="background-image: url('./img/21.jpeg');"></div>
+            <p>Após uma batalha épica, você derrota o monstro e resgata a moça. A aventura chega ao fim com sucesso.</p>
+        </div>
+        <div class="passo" id="passo-22">
+            <div class="img-cover" style="background-image: url('./img/17.jpeg');"></div>
+            <p>Com uma negociação habilidosa, você consegue libertar a moça e evitar a batalha. Vocês retornam em segurança.</p>
+        </div>
+        <div class="passo" id="passo-23">
+            <div class="img-cover" style="background-image: url('./img/23.jpeg');"></div>
+            <p>Você enfrenta armadilhas e perigos, mas finalmente encontra a caverna do monstro e resgata a moça com sucesso.</p>
+        </div>
+    </main>    
+    <script src="script.js"></script>
+</body>
+</html>
